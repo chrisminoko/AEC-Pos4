@@ -6,6 +6,17 @@
     <title>@ViewData["Title"] - AEC_Pos</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <!--datatables.net-->
+    <link rel="stylesheet" href="~/lib/DataTables/datatables.min.css" />
+    <!--datatables.net-->
+    <!--jquery numpad-->
+    <link rel="stylesheet" href="~/lib/jquerey-numpad/jquery.numpad.css" />
+    <!--jquery numpad-->
+    <!--toastr-->
+    <link rel="stylesheet" href="~/lib/toastr/toastr.min.css" />
+    <!--toastr-->
+
 </head>
 <body>
     <header>
@@ -18,12 +29,30 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
+                           <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Index">Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="GoodsReceives" asp-action="Index">goods</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Vendors" asp-action="Index">Vendor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="PurchaseOrders" asp-action="Index">PO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="GoodsReceives" asp-action="Index">GR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SalesOrders" asp-action="Index">SO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SalesOrders" asp-action="POS">Point Of Sales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="InvenTrans" asp-action="Index">InvenTrans</a>
                         </li>
                     </ul>
                 </div>
@@ -44,6 +73,20 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!--datatables.net-->
+    <script src="~/lib/DataTables/datatables.min.js"></script>
+    <!--datatables.net-->
+    <!--axios-->
+    <script src="~/lib/axios/axios.min.js"></script>
+    <!--axios-->
+    <!--jquery numpad-->
+    <script src="~/lib/jquerey-numpad/jquery.numpad.js"></script>
+    <!--jquery numpad-->
+    <!--toastr-->
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <!--toastr-->
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
